@@ -3,26 +3,27 @@ package diamond;
 import java.util.Scanner;
 
 /**
- * Created for first Diamond exercise
+ * Created for second Diamond exercise
  */
-public class Isosceles {
+public class Diamond extends Isosceles {
     public static void main(String[] args) {
         System.out.println("Give a number n");
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
 
         printTriangle(n);
+        printReverseTriangle(n-1);
     }
 
-    static void printTriangle(int n) {
-        for(int j = 1; j <= n; j++ ) {
-            for(int i = 0; i < n-j; i++) {
+    private static void printReverseTriangle(int n) {
+        for(int j = n; j >= 1; j--) {
+            for (int i = 0; i < n - j + 1; i++) {
                 System.out.print(" ");
             }
-            for(int i = 0; i < 2 * j - 1; i++) {
+            for (int i = 0; i < 2 * j - 1; i++) {
                 System.out.print("*");
             }
-            System.out.println();
+            System.out.println("");
         }
     }
 }

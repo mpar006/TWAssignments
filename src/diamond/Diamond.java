@@ -15,7 +15,7 @@ public class Diamond extends Isosceles {
         printReverseTriangle(n-1);
     }
 
-    private static void printReverseTriangle(int n) {
+    static void printReverseTriangle(int n) {
         for(int j = n; j >= 1; j--) {
             for (int i = 0; i < n - j + 1; i++) {
                 System.out.print(" ");

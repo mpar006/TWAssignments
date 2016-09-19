@@ -1,6 +1,7 @@
 package numbers;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -13,9 +14,13 @@ public class PrimeFactors {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
 
-        System.out.print("The prime factors of " + n + " are:");
-        for(Integer i : generate(n)) {
-            System.out.print(i);
+        System.out.print("The prime factors of " + n + " are: ");
+        ArrayList<Integer> facs = generate(n);
+        for(Iterator it = facs.iterator(); it.hasNext(); ) {
+            System.out.print(it.next());
+            if(it.hasNext()) {
+                System.out.print(",");
+            }
         }
     }
 

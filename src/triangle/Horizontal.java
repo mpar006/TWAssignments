@@ -3,7 +3,7 @@ package triangle;
 import java.util.Scanner;
 
 /**
- * Class for second Triangle assignment
+ * Class for second Triangle exercise
  */
 public class Horizontal {
     public static void main(String[] args) {

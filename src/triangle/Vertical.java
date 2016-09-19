@@ -3,7 +3,7 @@ package triangle;
 import java.util.Scanner;
 
 /**
- *  Created for third Triangle assignment
+ *  Created for third Triangle exercise
  */
 public class Vertical {
     public static void main(String[] args) {

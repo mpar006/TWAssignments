@@ -1,7 +1,7 @@
 package triangle;
 
 /**
- * Created by root on 19/09/16.
+ * Class for first Triangle assignment
  */
 public class Easy {
     public static void main(String[] args) {
